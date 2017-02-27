@@ -17,7 +17,7 @@ class WhackARuby < Gosu::Window
     @x += @velocity_x
     @y += @velocity_y
     @velocity_x *= -1 if @x + @width / 2 > 800 || @x - @width / 2 < 0
-    @velocity_y *= -1 if @y + @height /200 > 600 || @y - @height / 2 < 0  
+    @velocity_y *= -1 if @y + @height / 2 > 600 || @y - @height / 2 < 0  
   end
 
   def draw
